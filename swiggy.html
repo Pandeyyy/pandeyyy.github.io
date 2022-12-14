@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+    body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0%;
+      font-family: "Montserrat", sans-serif;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    .section1 {
+      height: 100%;
+      width: 60%;
+    }
+    .main {
+      height: 70%;
+      width: 100%;
+      display: flex;
+    }
+    .section2 {
+      height: 100%;
+      width: 40%;
+      background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+    }
+    .container {
+      height: 80%;
+      width: 80%;
+      margin-top: 80px;
+      margin-left: 150px;
+    }
+    nav {
+      width: 100%;
+      height: 80px;
+      display: flex;
+    }
+
+    .div1 {
+      height: 100%;
+      width: 150px;
+      display: flex;
+    }
+    .div2 {
+      margin-left: 400px;
+      margin-top: 25px;
+    }
+    .span {
+      margin: 10px 0 30px 0;
+      font-weight: bolder;
+      font-size: 30px;
+      color: orange;
+    }
+    .span1 {
+      font-weight: 900;
+      margin: 15px;
+    }
+    .span2 {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    h1 {
+      font-weight: bolder;
+      font-size: 30px;
+      margin: 20px 0 10px 0;
+    }
+    h2 {
+      font-size: 20px;
+      color: grey;
+      margin: 0 0 40px 0;
+    }
+    .input {
+      display: flex;
+      border: 1px solid grey;
+      border-right: none;
+      height: 60px;
+      width: 100%;
+    }
+    input {
+      width: 60%;
+      font-family: "Montserrat", sans-serif;
+      font-size: large;
+      padding-left: 20px;
+      border: none;
+    }
+    .loc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+    }
+    .div3 {
+      width: 100px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .div3:hover {
+      cursor: pointer;
+      background-color: rgb(204, 203, 203);
+    }
+    .div4 {
+      width: 70%;
+      height: 103%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: orange;
+      color: white;
+      margin-left: 12px;
+    }
+    .content {
+      margin-top: 50px;
+    }
+    .span3 {
+      color: grey;
+      font-weight: bolder;
+    }
+    .para {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    .div5 {
+      font-size: 15px;
+    }
+    .section3 {
+      width: 100%;
+      height: 350px;
+      background-color: rgb(53, 14, 14);
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      width: 80%;
+      height: 80%;
+
+      display: flex;
+    }
+    .item1 {
+      width: 33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .item2 {
+      width: 33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .item3 {
+      width: 33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .box1 {
+      width: 110px;
+      height: 200px;
+    }
+    .img1 {
+      width: 100%;
+      height: 100%;
+    }
+    .div6 {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .heading {
+      font-size: larger;
+      font-weight: bolder;
+      margin-top: 15px;
+    }
+    .section4 {
+      width: 100%;
+      height: 550px;
+      display: flex;
+    }
+    .section5 {
+      background-color: black;
+      width: 100vw;
+      height: 7220px;
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+    }
+    .area {
+      width: 450px;
+      height: 100%;
+      margin-left: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .div7 {
+      font-weight: bolder;
+      font-size: 35px;
+    }
+    .para1 {
+      color: grey;
+      font-weight: bolder;
+      font-size: 18px;
+    }
+    .play {
+      display: flex;
+      width: 400px;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .img2 {
+      width: 100%;
+      height: 100%;
+    }
+    .area1 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+    .up {
+      width: 400px;
+      height: 500px;
+      margin-left: 120px;
+    }
+    .img3 {
+      width: 100%;
+      height: 100%;
+    }
+    .down {
+      width: 400px;
+      height: 500px;
+      margin-top: 50px;
+    }
+    .main1 {
+      width: 75%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid white;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+      height: 480px;
+    }
+    .f1 {
+      width: 300px;
+      height: 500px;
+      padding-bottom: 20px;
+
+      padding-top: 20px;
+      color: white;
+    }
+    .f2 {
+      width: 160px;
+      height: 200px;
+      padding-bottom: 20px;
+
+      padding-top: 20px;
+      color: white;
+      margin-right: 150px;
+    }
+    .f3 {
+      width: 200px;
+      height: 200px;
+      padding-bottom: 20px;
+
+      padding-top: 20px;
+      color: white;
+    }
+    .en {
+      margin-bottom: 20px;
+      transition: 0.1s ease-in-out;
+    }
+    .ab {
+      margin-bottom: 30px;
+      color: grey;
+      font-weight: bolder;
+    }
+    .img4 {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 20px;
+      transition: 0.4s ease-in-out;
+    }
+    .footer {
+      width: 75%;
+      display: flex;
+      height: 100px;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .foot1 {
+      width: 150px;
+      height: 70%;
+    }
+    .foot2 {
+      width: 180px;
+      height: 60%;
+      font-size: 20px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .foot3 {
+      width: 170px;
+      height: 60%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .socials {
+      font-size: 30px;
+    }
+    .span1:hover {
+      cursor: pointer;
+      color: orange;
+    }
+    .span2:hover {
+      cursor: pointer;
+    }
+    .div4:hover {
+      cursor: pointer;
+    }
+    .img2:hover {
+      cursor: pointer;
+    }
+    .img5 {
+      width: 100%;
+      height: 100%;
+    }
+    .online:hover {
+      cursor: pointer;
+      transform: scale(110%);
+      transition: 0.3s ease-in-out;
+    }
+    .online {
+      transition: 0.3s ease-in-out;
+    }
+    .end {
+      display: flex;
+      margin-top: 50px;
+      width: 75%;
+      justify-content: space-between;
+      border-bottom: 1px solid white;
+    }
+    .e1 {
+      height: 6450px;
+      padding-bottom: 20px;
+
+      padding-top: 20px;
+      color: white;
+    }
+    .ens {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      transition: 0.1s ease-in-out;
+    }
+    .ens:hover {
+      cursor: pointer;
+      transition: 0.1s ease-in-out;
+      color: rgb(213, 212, 212);
+      font-size: 16.5px;
+    }
+    .en:hover {
+      cursor: pointer;
+      color: rgb(213, 212, 212);
+      font-size: 16.5px;
+      transition: ease-in-out 0.1s;
+    }
+    .foot1:hover {
+      cursor: pointer;
+    }
+    .img4:hover {
+      cursor: pointer;
+      transform: scale(110%);
+      transition: ease-in-out 0.4s;
+    }
+  </style>
+  <body>
+    <section class="main">
+      <section class="section1">
+        <div class="container">
+          <nav>
+            <div class="div1">
+              <iconify-icon
+                icon="simple-icons:swiggy"
+                style="color: rgb(255, 145, 0); font-size: 60px"
+              ></iconify-icon>
+              <p class="span">SWIGGY</p>
+            </div>
+            <div class="div2">
+              <span class="span1">Login</span>
+              <span class="span2">Sign up</span>
+            </div>
+          </nav>
+          <div class="inbox">
+            <h1>HUNGRY?</h1>
+            <h2>Order food from favourite restaurants near you.</h2>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Enter your delivery location" />
+            <div class="loc">
+              <div class="div3">
+                <iconify-icon
+                  icon="material-symbols:my-location-rounded"
+                ></iconify-icon>
+                <span>location</span>
+              </div>
+              <div class="div4">FIND FOOD</div>
+            </div>
+          </div>
+          <div class="content">
+            <span class="span3">POPULAR CITIES IN INDIA</span>
+            <p class="para">
+              Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai
+              <br />
+            </p>
+            <div class="div5">Pune & more</div>
+          </div>
+        </div>
+      </section>
+      <section class="section2"></section>
+    </section>
+    <section class="section3">
+      <div class="box">
+        <div class="item1">
+          <div class="box1">
+            <img
+              class="img1"
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+              alt=""
+            />
+          </div>
+          <div class="div6">
+            <span class="heading">No Minimum Order</span><br />
+            <span
+              >Order in for yourself or for the group,<br />
+              with no restrictions on order value</span
+            >
+          </div>
+        </div>
+        <div class="item2">
+          <div class="box1">
+            <img
+              class="img1"
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+              alt=""
+            />
+          </div>
+          <div class="div6">
+            <span class="heading">Live Order Tracking</span><br />
+            <span
+              >Know where your order is at all times,<br />
+              from the restaurant to your doorstep</span
+            >
+          </div>
+        </div>
+        <div class="item3">
+          <div class="box1">
+            <img
+              class="img1"
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+              alt=""
+            />
+          </div>
+          <div class="div6">
+            <span class="heading">No Minimum Order</span><br />
+            <span
+              >Experience Swiggy's superfast delivery <br />
+              for food delivered fresh & on time</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="area">
+        <div class="div7">
+          Restaurants in <br />
+          your pocket
+        </div>
+        <p class="para1">
+          Order from your favorite restaurants & track <br />
+          on the go, with the all-new Swiggy app.
+        </p>
+        <div class="play">
+          <span
+            ><img
+              class="img2"
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
+              alt=""
+          /></span>
+          <span
+            ><img
+              class="img2"
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
+              alt=""
+          /></span>
+        </div>
+      </div>
+      <div class="area1">
+        <div class="up">
+          <img
+            class="img3"
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/pixel_wbdy4n"
+            alt=""
+          />
+        </div>
+        <div class="down">
+          <img
+            class="img3"
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section5">
+      <div class="main1">
+        <div class="f1">
+          <div class="ab"><b>COMPANY</b></div>
+          <div class="en">About us</div>
+          <div class="en">Team</div>
+          <div class="en">Careers</div>
+          <div class="en">Swiggy Blog</div>
+          <div class="en">Bug Bounty</div>
+          <div class="en">Swiggy Corporate</div>
+          <div class="en">Swiggy Instamart</div>
+          <div class="en">Swiggy Genie</div>
+        </div>
+        <div class="f2">
+          <div class="ab"><b> CONTACT</b></div>
+          <div class="en">Help & Support</div>
+          <div class="en">Partner with us</div>
+          <div class="en">Ride with us</div>
+        </div>
+        <div class="f1">
+          <div class="ab"><b> LEGAL</b></div>
+          <div class="en">Terms & Conditions</div>
+          <div class="en">Refund & Cancellation</div>
+          <div class="en">Privacy Policy</div>
+          <div class="en">Cookie Policy</div>
+          <div class="en">Offer Terms</div>
+          <div class="en">Phishing & Fraud</div>
+          <div class="en">
+            Corporate – Swiggy Money Codes Terms and Conditions
+          </div>
+          <div class="en">
+            Corporate - Swiggy Discount Voucher Terms and Conditions
+          </div>
+        </div>
+        <div class="f3">
+          <div>
+            <img
+              class="img4"
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"
+              alt=""
+            />
+            <img
+              class="img4"
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="end">
+        <div class="e1">
+          <div class="ab"><b>WE DELIVER TO</b></div>
+          <div class="en">Abohar</div>
+          <div class="en">Adilabad</div>
+          <div class="en">Adityapur</div>
+          <div class="en">Adoni</div>
+          <div class="en">Agartala</div>
+          <div class="en">Agra</div>
+          <div class="en">Ahmedabad</div>
+          <div class="en">Ahmednagar</div>
+          <div class="en">Aizawl</div>
+          <div class="en">Ajmer</div>
+          <div class="en">Akola</div>
+          <div class="en">Alappuzha</div>
+          <div class="en">Aligarh</div>
+          <div class="en">Alipurduar</div>
+          <div class="en">Allahabad</div>
+          <div class="en">Almora</div>
+          <div class="en">Alwar</div>
+          <div class="en">Amalapuram</div>
+          <div class="en">Ambajogai</div>
+          <div class="en">Ambala</div>
+          <div class="en">Ambejogai</div>
+          <div class="en">Ambikapur</div>
+          <div class="en">Ambur</div>
+          <div class="en">Amravati</div>
+          <div class="en">Amreli</div>
+          <div class="en">Amritsar</div>
+          <div class="en">Anand</div>
+          <div class="en">Anantapur</div>
+          <div class="en">Angul</div>
+          <div class="en">Anjar</div>
+          <div class="en">Ankleshwar</div>
+          <div class="en">Arakkonam</div>
+          <div class="en">Arambagh</div>
+          <div class="en">Araria</div>
+          <div class="en">Arrah</div>
+          <div class="en">Aruppukottai</div>
+          <div class="en">Asansol</div>
+          <div class="en">Aurangabad</div>
+          <div class="en">Aurangabad_bihar</div>
+          <div class="en">Azamgarh</div>
+          <div class="en">Baddi</div>
+          <div class="en">Bagalkot</div>
+          <div class="en">Bagdogra</div>
+          <div class="en">Bagula</div>
+          <div class="en">Bahadurgarh</div>
+          <div class="en">Bahraich</div>
+          <div class="en">Balaghat</div>
+          <div class="en">Balangir</div>
+          <div class="en">Balasore</div>
+          <div class="en">Ballari</div>
+          <div class="en">Balrampur</div>
+          <div class="en">Balurghat</div>
+          <div class="en">Banda</div>
+          <div class="en">Bangalore</div>
+          <div class="en">Bankabihar</div>
+          <div class="en">Bankura</div>
+          <div class="en">Bantwal</div>
+          <div class="en">Bapatlachirala</div>
+          <div class="en">Baramati</div>
+          <div class="en">Baran</div>
+          <div class="en">Baraut</div>
+          <div class="en">Bardhaman</div>
+          <div class="en">Bardoli</div>
+          <div class="en">Bareilly</div>
+          <div class="en">Barh</div>
+          <div class="en">Baripada</div>
+          <div class="en">Baripada</div>
+          <div class="en">Barnala</div>
+          <div class="en">Barshi</div>
+          <div class="en">Basirhat</div>
+          <div class="en">Basti</div>
+          <div class="en">Batala</div>
+          <div class="en">Bathinda</div>
+          <div class="en">Beawar</div>
+          <div class="en">Beed</div>
+          <div class="en">Begusarai</div>
+          <div class="en">Bela-Pratapgarh</div>
+          <div class="en">Belgaum</div>
+          <div class="en">Berhampore</div>
+          <div class="en">Berhampur</div>
+          <div class="en">Bettiah</div>
+          <div class="en">Betul</div>
+          <div class="en">Bhadohi</div>
+          <div class="en">Bhadrachalam</div>
+          <div class="en">Bhadrak</div>
+          <div class="en">Bhadravathi</div>
+          <div class="en">Bhadravati</div>
+          <div class="en">Bhagalpur</div>
+          <div class="en">Bhandara</div>
+          <div class="en">Bharabanki</div>
+          <div class="en">Bharatpur</div>
+          <div class="en">Bharuch</div>
+          <div class="en">Bhatkal</div>
+          <div class="en">Bhavnagar</div>
+          <div class="en">Bhawanipatna</div>
+          <div class="en">Bhilai</div>
+          <div class="en">Bhilwara</div>
+          <div class="en">Bhimavaram</div>
+          <div class="en">Bhind</div>
+          <div class="en">Bhiwadi</div>
+          <div class="en">Bhiwani</div>
+          <div class="en">Bhopal</div>
+          <div class="en">Bhubaneswar</div>
+          <div class="en">Bhuj</div>
+          <div class="en">Bhusawal</div>
+          <div class="en">Bidar</div>
+          <div class="en">Biharsharif</div>
+          <div class="en">Bijapur</div>
+          <div class="en">Bijnor</div>
+          <div class="en">Bikaner</div>
+          <div class="en">Bilaspur</div>
+          <div class="en">Bilaspur-Hp</div>
+          <div class="en">Bilimora</div>
+          <div class="en">Biswanath-Chariali</div>
+          <div class="en">Bodhan-Rural</div>
+          <div class="en">Bodinayakanur</div>
+          <div class="en">Boisar</div>
+          <div class="en">Bokaro</div>
+          <div class="en">Bolpur</div>
+          <div class="en">Bongaigaon</div>
+          <div class="en">Bongaon</div>
+          <div class="en">Budaun</div>
+          <div class="en">Budhwal</div>
+          <div class="en">Bulandshahr</div>
+          <div class="en">Buldana</div>
+          <div class="en">Bundi</div>
+          <div class="en">Burhanpur</div>
+          <div class="en">Buxar</div>
+          <div class="en">Central-Goa</div>
+          <div class="en">Chaibasa</div>
+          <div class="en">Chakdaha</div>
+          <div class="en">Chalakkudy</div>
+          <div class="en">Chalisgaon</div>
+          <div class="en">Chandausi</div>
+          <div class="en">Chandigarh</div>
+          <div class="en">Chandrapur</div>
+          <div class="en">Changanassery</div>
+          <div class="en">Chengannur</div>
+          <div class="en">Chennai</div>
+          <div class="en">Chhapra</div>
+          <div class="en">Chhatarpur</div>
+          <div class="en">Chhindwara</div>
+          <div class="en">Chidambaram</div>
+          <div class="en">Chikhli</div>
+          <div class="en">Chikkaballapur</div>
+          <div class="en">Chikmagalur</div>
+          <div class="en">Chiplun</div>
+          <div class="en">Chitradurga</div>
+          <div class="en">Chittoor</div>
+          <div class="en">Chittorgarh</div>
+          <div class="en">Churu</div>
+          <div class="en">Coimbatore</div>
+          <div class="en">Cooch-Behar</div>
+          <div class="en">Cuddalore</div>
+          <div class="en">Cuttack</div>
+          <div class="en">Dahanu</div>
+          <div class="en">Dahod</div>
+          <div class="en">Daltonganj</div>
+          <div class="en">Daman</div>
+          <div class="en">Darbhanga</div>
+          <div class="en">Darjeeling</div>
+          <div class="en">Dasuya</div>
+          <div class="en">Daund</div>
+        </div>
+        <div class="e1">
+          <div class="ab"><b></b></div>
+          <div class="ens">Dausa</div>
+          <div class="en">Davanagere</div>
+          <div class="en">Dehradun</div>
+          <div class="en">Dehri</div>
+          <div class="en">Delhi</div>
+          <div class="en">Deoghar</div>
+          <div class="en">Dewas</div>
+          <div class="en">Dhanbad</div>
+          <div class="en">Dhar</div>
+          <div class="en">Dharamshala</div>
+          <div class="en">Dharapuram</div>
+          <div class="en">Dharmapuri</div>
+          <div class="en">Dharwad</div>
+          <div class="en">Dholpur</div>
+          <div class="en">Dhule</div>
+          <div class="en">Dibrugarh</div>
+          <div class="en">Digboi</div>
+          <div class="en">Dimapur</div>
+          <div class="en">Dindigul</div>
+          <div class="en">Diu</div>
+          <div class="en">Doddaballapura</div>
+          <div class="en">Duliajan</div>
+          <div class="en">Dumka</div>
+          <div class="en">Dungarpur</div>
+          <div class="en">Durgapur</div>
+          <div class="en">Dwarka</div>
+          <div class="en">Eluru</div>
+          <div class="en">Erode</div>
+          <div class="en">Etah</div>
+          <div class="en">Etawah</div>
+          <div class="en">Faizabad</div>
+          <div class="en">Faridabad</div>
+          <div class="en">Faridkot</div>
+          <div class="en">Farrukhabad</div>
+          <div class="en">Fatehabad</div>
+          <div class="en">Fatehgarh-Sahib</div>
+          <div class="en">Fatehpur</div>
+          <div class="en">Fazilka</div>
+          <div class="en">Firozabad</div>
+          <div class="en">Firozpur</div>
+          <div class="en">Gadag-Betigeri</div>
+          <div class="en">Gadwal</div>
+          <div class="en">Gandhidham</div>
+          <div class="en">Gangapur-City</div>
+          <div class="en">Gangarampur</div>
+          <div class="en">Gangtok</div>
+          <div class="en">Gauriganj</div>
+          <div class="en">Gaya</div>
+          <div class="en">Giridih</div>
+          <div class="en">Godhra</div>
+          <div class="en">Gokak</div>
+          <div class="en">Golaghat</div>
+          <div class="en">Gonda</div>
+          <div class="en">Gondal</div>
+          <div class="en">Gondia</div>
+          <div class="en">Gopalganj</div>
+          <div class="en">Gorakhpur</div>
+          <div class="en">Gudivada</div>
+          <div class="en">Gudur</div>
+          <div class="en">Guna</div>
+          <div class="en">Guntakal</div>
+          <div class="en">Guntur</div>
+          <div class="en">Gurdaspur</div>
+          <div class="en">Gurgaon</div>
+          <div class="en">Guwahati</div>
+          <div class="en">Gwalior</div>
+          <div class="en">Habra</div>
+          <div class="en">Hajipur</div>
+          <div class="en">Haldia</div>
+          <div class="en">Haldwani</div>
+          <div class="en">Halol</div>
+          <div class="en">Hamirpur</div>
+          <div class="en">Hampi</div>
+          <div class="en">Hansi</div>
+          <div class="en">Hanumangarh</div>
+          <div class="en">Hapur</div>
+          <div class="en">Hardoi</div>
+          <div class="en">Haridwar</div>
+          <div class="en">Hassan</div>
+          <div class="en">Hathras</div>
+          <div class="en">Haveri</div>
+          <div class="en">Himmatnagar</div>
+          <div class="en">Hisar</div>
+          <div class="en">Hojai</div>
+          <div class="en">Hoshangabad</div>
+          <div class="en">Hoshiarpur</div>
+          <div class="en">Hospet</div>
+          <div class="en">Hosur</div>
+          <div class="en">Hubli</div>
+          <div class="en">Hyderabad</div>
+          <div class="en">Ichalkaranji</div>
+          <div class="en">Idukki</div>
+          <div class="en">Imphal</div>
+          <div class="en">Indore</div>
+          <div class="en">Irinjalakuda</div>
+          <div class="en">Itanagar</div>
+          <div class="en">Itarsi</div>
+          <div class="en">Jabalpur</div>
+          <div class="en">Jagdalpur</div>
+          <div class="en">Jagraon</div>
+          <div class="en">Jagtial</div>
+          <div class="en">Jahanabad</div>
+          <div class="en">Jaigaon</div>
+          <div class="en">Jaipur</div>
+          <div class="en">Jalandhar</div>
+          <div class="en">Jalgaon</div>
+          <div class="en">Jalna</div>
+          <div class="en">Jalpaiguri</div>
+          <div class="en">Jammu</div>
+          <div class="en">Jamnagar</div>
+          <div class="en">Jamshedpur</div>
+          <div class="en">Jamui</div>
+          <div class="en">Jaunpur</div>
+          <div class="en">Jeypore</div>
+          <div class="en">Jhalawar</div>
+          <div class="en">Jhansi</div>
+          <div class="en">Jhargram</div>
+          <div class="en">Jharsuguda</div>
+          <div class="en">Jhunjhunu</div>
+          <div class="en">Jind</div>
+          <div class="en">Jjajjar</div>
+          <div class="en">Jodhpur</div>
+          <div class="en">Jorhat</div>
+          <div class="en">Junagadh</div>
+          <div class="en">Kadapa</div>
+          <div class="en">Kadayanallur</div>
+          <div class="en">Kadi</div>
+          <div class="en">Kadiri</div>
+          <div class="en">Kaithal</div>
+          <div class="en">Kakinada</div>
+          <div class="en">Kalaburagi</div>
+          <div class="en">Kalady</div>
+          <div class="en">Kalna</div>
+          <div class="en">Kamareddy</div>
+          <div class="en">Kanchrapara</div>
+          <div class="en">Kannauj</div>
+          <div class="en">Kannur</div>
+          <div class="en">Kanpur</div>
+          <div class="en">Kanyakumari</div>
+          <div class="en">Kapurthala</div>
+          <div class="en">Karad</div>
+          <div class="en">Karaikal</div>
+          <div class="en">Karaikal</div>
+          <div class="en">Karaikkudi</div>
+          <div class="en">Karimnagar</div>
+          <div class="en">Karnal</div>
+          <div class="en">Karunagappaly</div>
+          <div class="en">Karur</div>
+          <div class="en">Karwar</div>
+          <div class="en">Kasaragod</div>
+          <div class="en">Kashipur</div>
+          <div class="en">Katihar</div>
+          <div class="en">Katni</div>
+          <div class="en">Kavali</div>
+          <div class="en">Kayamkulam</div>
+          <div class="en">Kendrapada</div>
+          <div class="en">Kendujhar</div>
+          <div class="en">Khagaria</div>
+          <div class="en">Khalilabad</div>
+          <div class="en">Khamgaon</div>
+          <div class="en">Khammam</div>
+          <div class="en">Khandwa</div>
+          <div class="en">Khanna</div>
+        </div>
+        <div class="e1">
+          <div class="ab"><b></b></div>
+          <div class="ens">Kharagpur</div>
+          <div class="en">Khopoli</div>
+          <div class="en">Kishanganj</div>
+          <div class="en">Kishangarh</div>
+          <div class="en">Kochi</div>
+          <div class="en">Kodaikanal</div>
+          <div class="en">Kohima</div>
+          <div class="en">Kokrajhar</div>
+          <div class="en">Kolar</div>
+          <div class="en">Kolhapur</div>
+          <div class="en">Kolkata</div>
+          <div class="en">Kollam</div>
+          <div class="en">Koppal</div>
+          <div class="en">Korba</div>
+          <div class="en">Kota</div>
+          <div class="en">Kotdwar</div>
+          <div class="en">Kothagudem</div>
+          <div class="en">Kothamanagalam</div>
+          <div class="en">Kottakkal</div>
+          <div class="en">Kottarakkara</div>
+          <div class="en">Kottayam</div>
+          <div class="en">Kovilpatti</div>
+          <div class="en">Kozhikode</div>
+          <div class="en">Krishnagiri</div>
+          <div class="en">Krishnanagar</div>
+          <div class="en">Kullu</div>
+          <div class="en">Kumarakom</div>
+          <div class="en">Kumbakonam</div>
+          <div class="en">Kundapura</div>
+          <div class="en">Kunnamkullam</div>
+          <div class="en">Kurnool</div>
+          <div class="en">Kurukshetra</div>
+          <div class="en">Kushalnagar</div>
+          <div class="en">Lakhimpur</div>
+          <div class="en">Lalitpur</div>
+          <div class="en">Latur</div>
+          <div class="en">Lonavala</div>
+          <div class="en">Lonavla</div>
+          <div class="en">Lucknow</div>
+          <div class="en">Ludhiana</div>
+          <div class="en">Machilipatnam</div>
+          <div class="en">Madanapalle</div>
+          <div class="en">Madhubani</div>
+          <div class="en">Madikeri</div>
+          <div class="en">Madurai</div>
+          <div class="en">Mahabaleshwar</div>
+          <div class="en">Mahbubnagar</div>
+          <div class="en">Mahoba</div>
+          <div class="en">Malappuram</div>
+          <div class="en">Malda</div>
+          <div class="en">Malegaon</div>
+          <div class="en">Malout</div>
+          <div class="en">Manali</div>
+          <div class="en">Mancherial</div>
+          <div class="en">Mandapeta</div>
+          <div class="en">Mandi-Dabwali</div>
+          <div class="en">Mandi-Gobindgarh</div>
+          <div class="en">Mandi-Hp</div>
+          <div class="en">Mandsaur</div>
+          <div class="en">Mandya</div>
+          <div class="en">Mangaluru</div>
+          <div class="en">Manipal</div>
+          <div class="en">Manjeri</div>
+          <div class="en">Mannargudi</div>
+          <div class="en">Mansa</div>
+          <div class="en">Markapur</div>
+          <div class="en">Mathura</div>
+          <div class="en">Maunath-Bhanjan</div>
+          <div class="en">Mayiladuthurai</div>
+          <div class="en">Medinipur</div>
+          <div class="en">Meerut</div>
+          <div class="en">Mehsana</div>
+          <div class="en">Mettupalayam</div>
+          <div class="en">Miryalaguda</div>
+          <div class="en">Mirzapur</div>
+          <div class="en">Modinagar</div>
+          <div class="en">Moga</div>
+          <div class="en">Moodbidri</div>
+          <div class="en">Moradabad</div>
+          <div class="en">Morbi</div>
+          <div class="en">Morena</div>
+          <div class="en">Motihari</div>
+          <div class="en">Mount-Abu</div>
+          <div class="en">Mughalsarai</div>
+          <div class="en">Mukerian</div>
+          <div class="en">Muktsar</div>
+          <div class="en">Mumbai</div>
+          <div class="en">Munger</div>
+          <div class="en">Mussoorie</div>
+          <div class="en">Muvattupuzha</div>
+          <div class="en">Muzaffarnagar</div>
+          <div class="en">Muzaffarpur</div>
+          <div class="en">Mysore</div>
+          <div class="en">Nabadwip</div>
+          <div class="en">Nadiad</div>
+          <div class="en">Nagaon</div>
+          <div class="en">Nagapattinam</div>
+          <div class="en">Nagda</div>
+          <div class="en">Nagercoil</div>
+          <div class="en">Nagpur</div>
+          <div class="en">Naharlagun</div>
+          <div class="en">Nainital</div>
+          <div class="en">Nalbari</div>
+          <div class="en">Nalgonda</div>
+          <div class="en">Namakkal</div>
+          <div class="en">Nanded</div>
+          <div class="en">Nandurbar</div>
+          <div class="en">Nandyal</div>
+          <div class="en">Nangal</div>
+          <div class="en">Naraingarh</div>
+          <div class="en">Narasaraopet</div>
+          <div class="en">Narnaul</div>
+          <div class="en">Narsinghpur</div>
+          <div class="en">Narsipatnam</div>
+          <div class="en">Nashik</div>
+          <div class="en">Navsari</div>
+          <div class="en">Nawanshahr</div>
+          <div class="en">Neemuch</div>
+          <div class="en">Nellore</div>
+          <div class="en">Neyveli</div>
+          <div class="en">Nirmal</div>
+          <div class="en">Nizamabad</div>
+          <div class="en">Noida</div>
+          <div class="en">Noida-1</div>
+          <div class="en">North-Goa</div>
+          <div class="en">North-Lakhimpur</div>
+          <div class="en">Ongole</div>
+          <div class="en">Ooty</div>
+          <div class="en">Orai</div>
+          <div class="en">Osmanabad</div>
+          <div class="en">Pala</div>
+          <div class="en">Palakkad</div>
+          <div class="en">Palakollu</div>
+          <div class="en">Palampur</div>
+          <div class="en">Palani</div>
+          <div class="en">Palanpur</div>
+          <div class="en">Palghar</div>
+          <div class="en">Pali</div>
+          <div class="en">Palwal</div>
+          <div class="en">Panchgani</div>
+          <div class="en">Panipat</div>
+          <div class="en">Paradeep</div>
+          <div class="en">Paramakudi</div>
+          <div class="en">Parbhani</div>
+          <div class="en">Parvathipuram</div>
+          <div class="en">Pathankot</div>
+          <div class="en">Patiala</div>
+          <div class="en">Patna</div>
+          <div class="en">Pattukkottai</div>
+          <div class="en">Payyannur</div>
+          <div class="en">Perambalur</div>
+          <div class="en">Perinthalmanna</div>
+          <div class="en">Phagwara</div>
+          <div class="en">Pilani</div>
+          <div class="en">Pilibhit</div>
+          <div class="en">Pilkhuwa</div>
+          <div class="en">Pinjore-City</div>
+          <div class="en">Pondicherry</div>
+          <div class="en">Porbandar</div>
+          <div class="en">Port-Blair</div>
+          <div class="en">Pratapgarh</div>
+          <div class="en">Proddatur</div>
+          <div class="en">Pudukkottai</div>
+        </div>
+        <div class="e1">
+          <div class="ab"><b></b></div>
+          <div class="ens">Pune</div>
+          <div class="en">Puri</div>
+          <div class="en">Purnea</div>
+          <div class="en">Purulia</div>
+          <div class="en">Pusad</div>
+          <div class="en">Puttur</div>
+          <div class="en">Puttur-Karnataka</div>
+          <div class="en">Rae-Bareli</div>
+          <div class="en">Raghunathpur</div>
+          <div class="en">Raichur</div>
+          <div class="en">Raiganj</div>
+          <div class="en">Raigarh</div>
+          <div class="en">Raipur</div>
+          <div class="en">Rajahmundry</div>
+          <div class="en">Rajampet</div>
+          <div class="en">Rajapalayam</div>
+          <div class="en">Rajgarh</div>
+          <div class="en">Rajkot</div>
+          <div class="en">Rajnandgaon</div>
+          <div class="en">Rajsamand</div>
+          <div class="en">Ramachandrapuram</div>
+          <div class="en">Ramagundam</div>
+          <div class="en">Ramanagara</div>
+          <div class="en">Ramanathapuram</div>
+          <div class="en">Ramgarh</div>
+          <div class="en">Rampur</div>
+          <div class="en">Ranaghat</div>
+          <div class="en">Ranaghat-Wb</div>
+          <div class="en">Ranchi</div>
+          <div class="en">Rangia</div>
+          <div class="en">Rangpo</div>
+          <div class="en">Ranibennur</div>
+          <div class="en">Raniganj</div>
+          <div class="en">Ratlam</div>
+          <div class="en">Ratnagiri</div>
+          <div class="en">Ravulapalem</div>
+          <div class="en">Rayachoty</div>
+          <div class="en">Rayagada</div>
+          <div class="en">Rewa</div>
+          <div class="en">Rewari</div>
+          <div class="en">Rishikesh</div>
+          <div class="en">Rohtak</div>
+          <div class="en">Roorkee</div>
+          <div class="en">Ropar</div>
+          <div class="en">Rourkela</div>
+          <div class="en">Rudrapur</div>
+          <div class="en">Sagar</div>
+          <div class="en">Saharanpur</div>
+          <div class="en">Saharsa</div>
+          <div class="en">Salem</div>
+          <div class="en">Samastipur</div>
+          <div class="en">Sambalpur</div>
+          <div class="en">Sangamner</div>
+          <div class="en">Sangli</div>
+          <div class="en">Sangrur</div>
+          <div class="en">Santipur</div>
+          <div class="en">Saputara</div>
+          <div class="en">Sasaram</div>
+          <div class="en">Satara</div>
+          <div class="en">Satna</div>
+          <div class="en">Sawai-Madhopur</div>
+          <div class="en">Sawantwadi</div>
+          <div class="en">Sehore</div>
+          <div class="en">Shahdol</div>
+          <div class="en">Shahjahanpur</div>
+          <div class="en">Shamli</div>
+          <div class="en">Shikohabad</div>
+          <div class="en">Shillong</div>
+          <div class="en">Shimla</div>
+          <div class="en">Shirdi-City</div>
+          <div class="en">Shivamogga</div>
+          <div class="en">Shivpuri</div>
+          <div class="en">Shravasti</div>
+          <div class="en">Siddipet</div>
+          <div class="en">Sikar</div>
+          <div class="en">Silchar</div>
+          <div class="en">Siliguri</div>
+          <div class="en">Silvassa</div>
+          <div class="en">Sindhanur</div>
+          <div class="en">Singrauli</div>
+          <div class="en">Sirkali</div>
+          <div class="en">Sirsa</div>
+          <div class="en">Sirsi</div>
+          <div class="en">Sitamarhi</div>
+          <div class="en">Sitapur</div>
+          <div class="en">Sivakasi</div>
+          <div class="en">Sivasagar</div>
+          <div class="en">Siwan</div>
+          <div class="en">Solan</div>
+          <div class="en">Solapur</div>
+          <div class="en">Sonipat</div>
+          <div class="en">South-Goa</div>
+          <div class="en">Sri-Ganganagar</div>
+          <div class="en">Srikakulam</div>
+          <div class="en">Srinagar</div>
+          <div class="en">Srivilliputhur</div>
+          <div class="en">Sullurpeta</div>
+          <div class="en">Sultanpur</div>
+          <div class="en">Sulthan-Bathery</div>
+          <div class="en">Surat</div>
+          <div class="en">Suratgarh</div>
+          <div class="en">Surendranagar-Dudhrej</div>
+          <div class="en">Suri</div>
+          <div class="en">Suryapet</div>
+          <div class="en">Tadepalligudem</div>
+          <div class="en">Tadpatri</div>
+          <div class="en">Taliparambu</div>
+          <div class="en">Tanuku</div>
+          <div class="en">Tarn-Taran-Sahib</div>
+          <div class="en">Tenkasi</div>
+          <div class="en">Tezpur</div>
+          <div class="en">Thalassery</div>
+          <div class="en">Thanjavur</div>
+          <div class="en">Theni</div>
+          <div class="en">Thiruvalla</div>
+          <div class="en">Thiruvallur</div>
+          <div class="en">Thiruvananthapuram</div>
+          <div class="en">Thiruvarur</div>
+          <div class="en">Thodupuzha</div>
+          <div class="en">Thoothukudi</div>
+          <div class="en">Thrissur</div>
+          <div class="en">Tindivanam</div>
+          <div class="en">Tinsukia</div>
+          <div class="en">Tiptur</div>
+          <div class="en">Tirunelveli</div>
+          <div class="en">Tirupati</div>
+          <div class="en">Tirupattur</div>
+          <div class="en">Tirupur</div>
+          <div class="en">Tiruttani</div>
+          <div class="en">Tiruvannamalai</div>
+          <div class="en">Tohana</div>
+          <div class="en">Trichy</div>
+          <div class="en">Tumakuru</div>
+          <div class="en">Tuni</div>
+          <div class="en">Udaipur</div>
+          <div class="en">Udgir</div>
+          <div class="en">Udhampur</div>
+          <div class="en">Udumalaipettai</div>
+          <div class="en">Ujjain</div>
+          <div class="en">Uluberia</div>
+          <div class="en">Una</div>
+          <div class="en">Unnao</div>
+          <div class="en">Vadodara</div>
+          <div class="en">Valsad</div>
+          <div class="en">Vapi</div>
+          <div class="en">Varanasi</div>
+          <div class="en">Varkala</div>
+          <div class="en">Vellore</div>
+          <div class="en">Veraval</div>
+          <div class="en">Vidisha</div>
+          <div class="en">Vijayawada</div>
+          <div class="en">Viluppuram</div>
+          <div class="en">Virudhunagar</div>
+          <div class="en">Vizag</div>
+          <div class="en">Vizianagaram</div>
+          <div class="en">Vyara</div>
+          <div class="en">Waidhan</div>
+          <div class="en">Warangal</div>
+          <div class="en">Wardha</div>
+          <div class="en">Washim</div>
+          <div class="en">Wayanad</div>
+          <div class="en">Yamuna-Nagar</div>
+          <div class="en">Yavatmal</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="foot1">
+          <img
+            class="img5"
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
+            alt=""
+          />
+        </div>
+        <div class="foot2"><span>© 2022 Swiggy</span></div>
+        <div class="foot3">
+          <span class="socials"
+            ><iconify-icon
+              class="online"
+              icon="ri:facebook-fill"
+              style="color: white"
+            ></iconify-icon
+          ></span>
+          <span class="socials"
+            ><iconify-icon
+              class="online"
+              icon="mdi:pinterest"
+              style="color: white"
+            ></iconify-icon
+          ></span>
+          <span class="socials"
+            ><iconify-icon
+              class="online"
+              icon="ri:instagram-line"
+              style="color: white"
+            ></iconify-icon
+          ></span>
+          <span class="socials"
+            ><iconify-icon
+              class="online"
+              icon="mdi:twitter"
+              style="color: white"
+            ></iconify-icon
+          ></span>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  </body>
+</html>

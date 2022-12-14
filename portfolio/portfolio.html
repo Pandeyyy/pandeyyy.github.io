@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+    img {
+      width: 200px;
+      height: 250px;
+      padding-right: 40px;
+    }
+    body {
+      padding-top: 30px;
+      padding-left: 100px;
+      width: 1200px;
+      font-family: "Montserrat", sans-serif;
+      background-color: rgb(250, 247, 244);
+      background: linear-gradient(to right, rgb(243, 244, 246), rgb(209, 213, 219))
+   
+      
+    }
+    h2 {
+      color: red;
+      margin-top: 3px;
+      font-size: medium;
+      font-weight: 400;
+    }
+    .s1 {
+      display: flex;
+    }
+    h1 {
+      margin-bottom: 0;
+      font-weight: 900;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: small;
+      margin-top: 70px;
+    }
+    .d2 {
+      width: 200px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .icon {
+      border: 1px solid rgb(238, 232, 232);
+      padding: 6px;
+      border-radius: 2px;
+    }
+    .icon:hover {
+      border: 1px solid rgb(167, 161, 161);
+      transform: scale(110%);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .w-10 {
+      width: 210px;
+    }
+    .w-10 div {
+      width: 100%;
+    }
+    .w2 {
+      width: 202px;
+      text-align: right;
+    }
+    .u1 {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: small;
+      margin-top: 0;
+    }
+
+    .b {
+      font-weight: bold;
+    }
+    .l1 {
+      width: 460px;
+    }
+    .s2 {
+      padding-top: 40px;
+    }
+    progress {
+      height: 6px;
+      width: 400px;
+    }
+
+    .c2 {
+      font-weight: bolder;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+    .c3 {
+      font-weight: 600;
+      padding-bottom: 4px;
+    }
+    .ad {
+      padding-bottom: 4px;
+    }
+    .input {
+      background-color: #F2F2F2;
+      border: none;
+      width: 900px;
+      height: 40px;
+      padding-left: 10px;
+      font-family: "Montserrat", sans-serif;
+    }
+    .input:hover{
+      transform: scale(100%);
+      transition: .5s;
+      background-color: #F2F2F2;
+    }
+    .input2 {
+      background-color: #F2F2F2;
+      border: none;
+      width: 900px;
+      height: 200px;
+      padding-left: 10px;
+      text-decoration: none;
+      padding-top: 15px;
+      font-family: "Montserrat", sans-serif;
+    }
+    .input2:hover{
+      transform: scale(100%);
+      transition: .5s;
+      background-color: #F2F2F2;
+    }
+    .btn {
+      background-color: rgb(255, 89, 0);
+      border: none;
+      border-radius: 0%;
+      color: white;
+      height: 40px;
+      width: 120px;
+      cursor: pointer;
+      font-family: "Montserrat", sans-serif;
+    }
+    .btn:hover {
+      background-color: rgb(228, 82, 3);
+      transition: .3s;
+    }
+    .w3 {
+      width: 1150px;
+      text-align: right;
+      font-size: smaller;
+    }
+    .sp {
+      color: red;
+    }
+    .s-2 {
+      padding-top: 20px;
+    }
+    .pandey {
+      border-radius: 8px;
+      height: 60px;
+      width: 60px;
+      padding: 0;
+    }
+    .img {
+      display: flex;
+    }
+    .p1 {
+      padding-right: 10px;
+    }
+    .star {
+      padding-top: 10px;
+    }
+    .s {
+      padding-top: 5px;
+    }
+    .it {
+      padding-bottom: 40px;
+      height: 200px;
+      width: 275px;
+    }
+    .it:hover {
+      cursor: pointer;
+
+      transform: scale(110%);
+
+      transition: 0.5s;
+    }
+    .i1 {
+      width: 960px;
+    }
+    .d3{
+      padding-bottom: 5px;
+    }
+    .s21{
+        padding-top: 40px;
+    }
+    .s22{
+        padding-top: 40px;
+    }
+    @media only screen and (max-width: 600px) 
+    {
+        body{
+            width: 100vw;
+            padding-left: 12px;
+            padding-top: 12px;
+            margin: 0;
+         }
+         img{
+            width: 70px;
+            height: 80px;
+            padding-right: 10px;
+            
+         }
+         .d1{
+            width: 100%;
+         }
+         p{
+            font-size: 15px;
+            width: 100vw;
+         }
+         .u1{
+            width: fit-content;
+         }
+         .s21{
+            display: flex;
+            flex-direction: column;
+         }
+         progress{
+            width: 100%;
+         }
+         .s22{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+         }
+         .s2{
+            width: 100%;
+         }
+         .input2{
+            width: 100%;
+         }
+
+
+    }
+
+  </style>
+  <body>
+    <section>
+      <section class="s1">
+        <div>
+          <img
+            src="pandey.jpg"
+            alt=""
+          />
+        </div>
+        <div class="d1">
+          <h1>PRIYANSHU PANDEY</h1>
+          <h2>Developer</h2>
+          <p>
+            Credibly embrace visionary internal or "organic" sources and
+            business benefits. Collaboratively integrate efficient portals
+            rather than customized customer service. Assertively deliver
+            frictionless services via leveraged interfaces. Conveniently
+            evisculate accurate sources and process-centric
+            expertise.Energistically fabricate customized imperatives through
+            cooperative catalysts for change.
+          </p>
+          <ul class="u1">
+            <li>
+              <div class="b">APRIL 21, 2005</div>
+              <div>BIRTH</div>
+            </li>
+            <li>
+              <div class="b">INDIA</div>
+              <div>NATIONALITY</div>
+            </li>
+            <li>
+              <div class="b">HINDI (NATIVE),ENGLISH (INTERMEDIATE)</div>
+              <div>LANGUAGE</div>
+            </li>
+          </ul>
+          <div class="d2">
+            <iconify-icon class="icon" icon="akar-icons:facebook-fill">
+            </iconify-icon>
+            <iconify-icon
+              class="icon"
+              icon="ant-design:twitter-circle-filled"
+            ></iconify-icon>
+            <iconify-icon
+              class="icon"
+              icon="akar-icons:linkedin-v1-fill"
+            ></iconify-icon>
+            <iconify-icon
+              class="icon"
+              icon="clarity:hashtag-solid"
+            ></iconify-icon>
+            <iconify-icon
+              class="icon"
+              icon="akar-icons:dribbble-fill"
+            ></iconify-icon>
+          </div>
+        </div>
+      </section>
+      <section class="s2">
+        <ul>
+          <li class="w2">MY ACTIVITY</li>
+          <li class="w-10">
+            <div class="b">100%</div>
+            <div>JOBS SUCCESS</div>
+          </li>
+          <li class="w-10">
+            <div class="b">96%</div>
+            <div>ON BUDGET</div>
+          </li>
+          <li class="w-10">
+            <div class="b">99%</div>
+            <div>ON TIME</div>
+          </li>
+          <li class="w-10">
+            <div class="b">89%</div>
+            <div>REPEAT HIRE RATE</div>
+          </li>
+        </ul>
+        <section class="s2">
+          <ul>
+            <li class="w2">WORK HISTORY</li>
+            <li class="w-10">
+              <div class="b">15096</div>
+              <div>HOURS WORKED</div>
+            </li>
+            <li class="w-10">
+              <div class="b">687</div>
+              <div>WORK DONE</div>
+            </li>
+            <li class="w-10">
+              <div class="b">30</div>
+              <div>HOURS WEEKLY AVAILABLE</div>
+            </li>
+            <li class="w-10">
+              <div class="b">24</div>
+              <div>HOUR RESPONSE TIME</div>
+            </li>
+          </ul>
+        </section>
+        <section class="s2">
+          <ul>
+            <li class="w2">MY SPECIALITIES</li>
+            <li class="l1">
+              <div class="d3"><b>WORDPRESS THEME DEVELOPMENT</b></div>
+              <div>
+                Synergistically strategize customer directed resources rather
+                than principle.
+              </div>
+              <br />
+              <div  class="d3"><b>DRUPAL TEMPLATE DEVELOPMENT</b></div>
+              <div>
+                Interactively myocardinate high standards in initiatives rather
+                than next-generation.
+              </div>
+            </li>
+            <li class="l1">
+              <div  class="d3"><b>JOOMLA TEMPLATE DEVELOPMENT</b></div>
+              <div>
+                Quickly repurpose reliable customer service with orthogonal
+                ideas. Competently.
+              </div>
+              <br />
+              <div  class="d3"><b>SHOPIFY THEME DESIGN</b></div>
+              <div>
+                Dynamically initiate client-based convergence vis-a-vis
+                performance based.
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="s21">
+          <ul>
+            <li class="w2">SKILLS</li>
+            <li class="l1">
+              <div><b>CODING SKILLS</b></div>
+              <br />
+              <div>HTML5</div>
+              <div><progress value="62" max="100">62%</progress></div>
+              <br />
+              <div>CSS3</div>
+              <div><progress value="90" max="100">90%</progress></div>
+              <br />
+              <div>PHP</div>
+              <div><progress value="75" max="100">75%</progress></div>
+              <br />
+              <div>JavaScript</div>
+              <div><progress value="55" max="100">55%</progress></div>
+            </li>
+            <li class="l1">
+              <div><b>DESIGN TOOLS</b></div>
+              <br />
+              <div>Photoshop</div>
+              <div class="prg"><progress value="90" max="100">90%</progress></div>
+              <br />
+              <div>Illustrator</div>
+              <div><progress value="50" max="100">50%</progress></div>
+              <br />
+              <div>Sketch</div>
+              <div><progress value="75" max="100">75%</progress></div>
+              <br />
+              <div>MACAW</div>
+              <div><progress value="55" max="100">55%</progress></div>
+            </li>
+          </ul>
+        </section>
+        <section class="s2">
+          <ul>
+            <li class="w2">WORK EXPERIENCE</li>
+            <li class="l1">
+              <div>2022 - Present</div>
+              <div class="c2">Learning Web Developing</div>
+              <div class="c3">Digital Marketing Agency</div>
+              <div>Haripur Kalan, Dehradun</div>
+              <br /><br /><br />
+              <div>2022 - Present</div>
+              <div class="c2">Learning Web Developing</div>
+              <div class="c3">Digital Marketing Agency</div>
+              <div>Haripur Kalan, Dehradun</div>
+            </li>
+            <li class="l1">
+              <div>2022 - Present</div>
+              <div class="c2">Learning Web Developing</div>
+              <div class="c3">Digital Marketing Agency</div>
+              <div>Haripur Kalan, Dehradun</div>
+              <br /><br /><br />
+              <div>2022 - Present</div>
+              <div class="c2">Learning Web Developing</div>
+              <div class="c3">Digital Marketing Agency</div>
+              <div>Haripur Kalan, Dehradun</div>
+            </li>
+          </ul>
+        </section>
+        <section class="s2">
+          <ul>
+            <li class="w2">EDUCATION</li>
+            <li class="l1">
+              <div>2019 - 2020</div>
+              <div class="c2">Class 10th</div>
+              <div class="c3">Bhagirathi Vidyalaya</div>
+              <div>Haripur Kalan, Dehradun</div>
+              <br /><br /><br />
+              <div>2021 - 2022</div>
+              <div class="c2">Class 12th</div>
+              <div class="c3">Bhagirathi Vidyalaya</div>
+              <div>Haripur Kalan, Dehradun</div>
+              <br /><br /><br />
+              <div>2022 - Present</div>
+              <div class="c2">BCA</div>
+              <div class="c3">Doon Group of Institution</div>
+              <div>Shyampur, Rishikesh</div>
+            </li>
+            <li class="l1"></li>
+          </ul>
+        </section>
+
+        <section class="s2">
+          <ul>
+            <li class="w2">MARKETPLACE PROFILE</li>
+            <li class="l1">
+              <div>
+                <iconify-icon icon="cib:envato"></iconify-icon
+                ><b>ENVATO STUDIO</b>
+              </div>
+              <br />
+              <div>
+                Seamlessly formulate covalent outsourcing vis-a-vis virtual
+                resources. Distinctively conceptualize.
+              </div>
+              <br /><br />
+              <div>
+                <iconify-icon icon="bxl:upwork"></iconify-icon> <b>UPWORK</b>
+              </div>
+              <br />
+              <div>
+                Seamlessly formulate covalent outsourcing vis-a-vis virtual
+                resources. Distinctively conceptualize.
+              </div>
+            </li>
+            <li class="l1">
+              <div>
+                <iconify-icon icon="simple-icons:freelancer"></iconify-icon
+                ><b>FREELANCER</b>
+              </div>
+              <br />
+              <div>
+                Seamlessly formulate covalent outsourcing vis-a-vis virtual
+                resources. Distinctively conceptualize.
+              </div>
+              <br /><br />
+              <div>
+                <iconify-icon icon="carbon:face-pending"></iconify-icon
+                ><b>PEOPLEPERHOUR</b>
+              </div>
+              <br />
+              <div>
+                Seamlessly formulate covalent outsourcing vis-a-vis virtual
+                resources. Distinctively conceptualize.
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="s2">
+          <ul>
+            <li class="w2">PORTFOLIO</li>
+            <li class="i1">
+              <div>
+                <span
+                  ><img
+                    class="it"
+                    src="https://uicookies.com/demo/theme/myprofile/img/portfolio-1.jpg"
+                    alt=""
+                /></span>
+                <span
+                  ><img
+                    class="it"
+                    src="https://uicookies.com/demo/theme/myprofile/img/portfolio-2.jpg"
+                    alt=""
+                /></span>
+                <span
+                  ><img
+                    class="it"
+                    src="https://uicookies.com/demo/theme/myprofile/img/portfolio-3.jpg"
+                    alt=""
+                /></span>
+              </div>
+              <div>
+                <span
+                  ><img
+                    class="it"
+                    src="https://uicookies.com/demo/theme/myprofile/img/portfolio-4.jpg"
+                    alt=""
+                /></span>
+                <span
+                  ><img
+                    class="it"
+                    src="https://uicookies.com/demo/theme/myprofile/img/portfolio-5.jpg"
+                    alt=""
+                /></span>
+                <span
+                  ><img
+                    class="it"
+                    src="https://uicookies.com/demo/theme/myprofile/img/portfolio-6.jpg"
+                    alt=""
+                /></span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="s22">
+          <ul>
+            <li class="w2">RECENT REVIEWS</li>
+            <li class="l1">
+              <div class="img">
+                <div class="p1">
+                  <img
+                    src="https://uicookies.com/demo/theme/myprofile/img/img-testimonial-2.jpg"
+                    class="pandey"
+                  />
+                </div>
+                <span class="s">
+                  <b> Sofia Voigt</b>
+                  <div class="star">
+                    <iconify-icon icon="emojione:star"></iconify-icon
+                    ><iconify-icon icon="emojione:star"></iconify-icon
+                    ><iconify-icon icon="emojione:star"></iconify-icon
+                    ><iconify-icon icon="emojione:star"></iconify-icon
+                    ><iconify-icon icon="emojione:star"></iconify-icon>
+                    <span>5.0</span>
+                  </div>
+                </span>
+              </div>
+              <div>
+                <p>
+                  Seamlessly leverage other's transparent resources after
+                  resource maximizing channels. Continually grow economically
+                  sound collaboration and idea-sharing and compelling
+                  technology. Collaboratively unleash.
+                </p>
+              </div>
+            </li>
+            <li class="l1">
+              <div class="img">
+                <div class="p1">
+                  <img
+                    src="https://uicookies.com/demo/theme/myprofile/img/img-testimonial-1.jpg"
+                    class="pandey"
+                  />
+                </div>
+                <span class="s">
+                  <b>Matteo Müller</b>
+                  <div>
+                    <div class="star">
+                      <iconify-icon icon="emojione:star"></iconify-icon
+                      ><iconify-icon icon="emojione:star"></iconify-icon
+                      ><iconify-icon icon="emojione:star"></iconify-icon
+                      ><iconify-icon icon="emojione:star"></iconify-icon
+                      ><iconify-icon icon="el:star"></iconify-icon
+                      ><span>4.0</span>
+                    </div>
+                  </div>
+                </span>
+              </div>
+              <div>
+                <p>
+                  Uniquely target empowered relationships after client-based
+                  e-commerce. Energistically morph worldwide resources for
+                  future-proof content. Authoritatively transform granular users
+                  whereas intermandated applications.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="s2">
+          <ul>
+            <li class="w2">CONTACT</li>
+            <li class="w-10">
+              <div class="ad"><b>ADDRESS</b></div>
+              <div>Haripur Kalan, Dehradun, Uttrakhand</div>
+            </li>
+            <li class="w-10">
+              <div class="ad"><b>PHONE NUMBER</b></div>
+              <div>+918006794432</div>
+            </li>
+            <li class="w-10">
+              <div class="ad"><b>MOBILE NUMBER</b></div>
+              <div>7453834849</div>
+            </li>
+            <li class="w-10">
+              <div class="ad"><b>EMAIL</b></div>
+              <div>pandeyy12@gmail.com</div>
+            </li>
+          </ul>
+        </section>
+        <section class="s-2">
+          <ul>
+            <li class="w2"></li>
+            <li class="l1">
+              <b>GET IN TOUCH</b><br /><br />
+              <div>
+                <input type="text" class="input" placeholder="FULL NAME" />
+              </div>
+              <br />
+              <div><input type="text" class="input" placeholder="EMAIL" /></div>
+              <br />
+              <div>
+                <input type="text" class="input" placeholder="SUBJECT" />
+              </div>
+              <br />
+              <div>
+                <textarea
+                  class="input2"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="WRITE A MESSAGE"
+                ></textarea>
+              </div>
+              <br />
+              <div><button class="btn" type="submit">SUBMIT</button></div><br>
+              <div><a href="about.html"><button class="btn" type="submit">BACK</button></a></div>
+            </li>
+            <li class="l1"></li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <ul>
+          <li class="w3">
+            <div>Online CV. Made By: <span class="sp">pandey</span></div>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  </body>
+</html>
